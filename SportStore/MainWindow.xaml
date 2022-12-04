@@ -11,7 +11,7 @@
         Height="750"
         Width="1200"
         MinHeight="740"
-        MinWidth="1100"
+        MinWidth="1100" 
         MaxHeight="770"
         MaxWidth="1250"
         Name="mainWindowApp"
