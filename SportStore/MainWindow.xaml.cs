@@ -32,7 +32,7 @@ namespace SportStore
         {
             InitializeComponent();
 
-            statusUser.Text = user.RoleNavigation.Name;
+           // statusUser.Text = user.RoleNavigation.Name;
 
             using (SportStoreContext db = new SportStoreContext())
             {
@@ -53,7 +53,8 @@ namespace SportStore
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            new LoginWindow().Show();
+            this.Close();
         }
     }
 }
