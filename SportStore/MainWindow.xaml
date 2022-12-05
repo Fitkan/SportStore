@@ -61,16 +61,19 @@
             </ListView.ItemsPanel>
 
             <ListView.ItemTemplate>
+
                 <DataTemplate>
+
                     <StackPanel Width="300">
 
-                        <TextBlock Text="{Binding Name}"
-				  VerticalAlignment="Center"
-				  TextAlignment="Center"
-				  TextWrapping="Wrap"
-				  HorizontalAlignment="Center"
-				  Margin="0"
-                                  FontSize="15"/>
+                        <TextBlock Text="{Binding Name, StringFormat=Название: {0}}"
+				                       VerticalAlignment="Center"
+				                       TextAlignment="Center"
+				                       TextWrapping="Wrap"
+				                       HorizontalAlignment="Center"
+				                       Margin="0"
+                                       FontSize="15"/>
+
                         <TextBlock Text="{Binding ArticleNumber, StringFormat=Артикль: {0}}" FontSize="15" Margin="5, 5"/>
 
                         <TextBlock Text="{Binding Category, StringFormat=Категория: {0}}" FontSize="15" Margin="5, 5"/>
@@ -90,6 +93,8 @@
                         <TextBlock Text="{Binding Supplier, StringFormat=Поставщик: {0}}" FontSize="15" Margin="5, 5"/>
 
                         <TextBlock Text="{Binding Unit, StringFormat=Ед.измерения: {0}}" FontSize="15" Margin="5, 5"/>
+                        
+                        
                     </StackPanel>
 
                 </DataTemplate>

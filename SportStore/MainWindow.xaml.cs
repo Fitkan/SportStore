@@ -32,7 +32,7 @@ namespace SportStore
         {
             InitializeComponent();
 
-           // statusUser.Text = user.RoleNavigation.Name;
+           statusUser.Text = user.RoleNavigation.Name;
 
             using (SportStoreContext db = new SportStoreContext())
             {
